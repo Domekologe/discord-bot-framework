@@ -48,13 +48,14 @@ self-contained plugins under `plugins/`.
 git clone https://github.com/domekologe/discord-bot-framework.git
 cd discord-bot-framework
 
+# Create Virtual Env.
+uv venv
+
+# Enable Virtual Env.
+source .venv/bin/activate
+
 # Install dependencies (editable mode for development)
 uv pip install -e .
-
-# Create Virtual Environment
-py -3.12 -m venv .venv
-.\.venv\Scripts\activate
-python -m pip install -U pip
 
 # Copy environment template and populate secrets
 cp .env.example .env
