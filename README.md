@@ -45,11 +45,16 @@ self-contained plugins under `plugins/`.
 ### Local Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/discord-bot-framework.git
+git clone https://github.com/domekologe/discord-bot-framework.git
 cd discord-bot-framework
 
 # Install dependencies (editable mode for development)
 uv pip install -e .
+
+# Create Virtual Environment
+py -3.12 -m venv .venv
+.\.venv\Scripts\activate
+python -m pip install -U pip
 
 # Copy environment template and populate secrets
 cp .env.example .env
