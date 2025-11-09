@@ -62,6 +62,7 @@ cp .env.example .env
 $EDITOR .env  # add DISCORD_TOKEN, database URL, Lavalink credentials, etc.
 
 # Initialise the database schema
+mkdir data
 python -m bot.cli db create
 
 # Launch the bot (development logging & settings)
